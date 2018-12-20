@@ -1,0 +1,31 @@
+@font-face {
+  font-family: SFCompactDisplay;
+  src: url("https://eliotchignell.github.io/assets/fonts/SFCompactDisplay-Medium.otf") format("opentype");
+}
+
+* {
+  font-family: SFCompactDisplay, -apple-system, BlinkMacSystemFont, Arial;
+}
+
+h1 {
+  color: deepskyblue;
+}
+
+textarea, input {
+    width: 50%;
+    text-weight: bolder;
+    font-size: 20px;
+    resize: none;
+    border: 3px solid deepskyblue;
+}
+
+#encryptB, #decryptB {
+    width: 50%;
+    font-size: 20px;
+    background-color: white;
+    border: 3px solid deepskyblue;
+}
+
+body {
+  background-color: black;
+}
