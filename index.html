@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="mainContainer">
+      <form action="javascript:encrypt(document.querySelector('#eText').value);">
+        <center><h1>Encryption</h1>
+        <textarea id="eText" placeholder="Text you want to encrypt..." autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false'></textarea>
+        <br>
+        <button id="encryptB">Encrypt</button>
+        <p>Your Encrypted text</p>
+        <textarea id="fText" readonly></textarea>
+        <p>Your key</p>
+        <textarea id="fKey" readonly></textarea>
+      </form>
+
+      <form action="javascript:decrypt(document.querySelector('#dText').value,document.querySelector('#dKey').value);">
+        <h1>Decryption</h1>
+        <textarea id="dText" placeholder="Text you want to decrypt..."
+                  autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false'></textarea>
+        <br>
+        <input type="text" id="dKey" placeholder="Key...">
+        <br><br>
+        <button id="decryptB">Decrypt</button>
+        <p>Your Decrypted text</p>
+        <textarea id='ffText' readonly></textarea>
+        </center>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
