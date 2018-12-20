@@ -20,7 +20,7 @@ textarea, input {
 }
 
 #encryptB, #decryptB {
-    width: 50%;
+    width: 25%;
     font-size: 20px;
     background-color: white;
     border: 3px solid deepskyblue;
